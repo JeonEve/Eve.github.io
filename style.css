@@ -1,0 +1,683 @@
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container-fluid, .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        width: 100%;
+        padding-right: var(--bs-gutter-x, -3rem);
+        padding-left: var(--bs-gutter-x, -3rem);
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .gradient-background {
+        background: linear-gradient(135deg, #1C3763 5%, #392A40 30%, #6C324F 50%, #BB3B56);
+        height: 100vh;
+        width: 100%;
+        background-size: cover;
+    }
+
+    .sign-in-text {
+        top: 37%;
+        left: 56.3%;
+        color: white;
+        text-align: left;
+        position: absolute;
+        font-family: "Noto Serif";
+        font-weight: bolder;
+        font-size: xx-large;
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+    }
+
+    .email-input {
+        border: 2px solid white;
+        position: absolute;
+        top: 47%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        font-size: 16px;
+        padding: 18px 24px;
+        border-radius: 5px;
+        width: 35%;
+        height: 9.5%;
+        text-align: left;
+        background: none;
+        font-family: "Titillium Web";
+        font-weight: bold;
+        letter-spacing: 2px;
+        border-radius: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+    }
+
+    .email-error-message {
+        position: absolute;
+        top: 54%;
+        left: 60.5%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        font-size: 16px;
+        padding: 18px 24px;
+        text-align: left;
+        background: none;
+        font-family: "Titillium Web";
+        font-weight: bold;
+        letter-spacing: 2px;
+        display: block;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        color:	#FFA07A;
+    }
+
+    .password-input {
+        border: 2px solid white;
+        position: absolute;
+        top: 61%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        font-size: 16px;
+        padding: 18px 24px;
+        border-radius: 5px;
+        width: 35%;
+        height: 9.5%;
+        text-align: left;
+        background: none;
+        font-family: "Titillium Web";
+        font-weight: bold;
+        letter-spacing: 2px;
+        border-radius: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+    }
+
+    .password-error-message {
+        position: absolute;
+        top: 67%;
+        left: 68%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        font-size: 16px;
+        padding: 18px 24px;
+        text-align: left;
+        background: none;
+        font-family: "Titillium Web";
+        font-weight: bold;
+        letter-spacing: 2px;
+        display: block;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        color: 	#FFA07A;
+    }
+
+    .next-btn {
+        color: white; 
+        background-color: #1C3763;
+        position: absolute;
+        top: 74.5%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        font-size: 16px;
+        padding: 18px 24px;
+        cursor: pointer;
+        text-align: center;
+        width: 35%;
+        height: 9.5%;
+        border-radius: 40px;
+        letter-spacing: 1.5px;
+        font-weight: bold;
+        font-family: "Titillium Web";
+    }
+
+    .forgot-password-link {
+        color: white; 
+        position: absolute;
+        top: 83%;
+        left: 84%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        font-size: 12px;
+        padding: 18px 24px;
+        cursor: pointer;
+        text-align: left;
+        background: none;
+        font-family: "Open Sans";
+        font-weight: bold;
+    }
+
+    a:active{
+        color:#CCCCFF;
+        background: repeating-radial-gradient(black, transparent 100px);
+        border: 1px;
+        padding: 5px;
+
+    }
+
+    .not-member-label {
+        color: white; 
+        position: absolute;
+        top: 83%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        font-size: 12px;
+        padding: 18px 24px;
+        cursor: pointer;
+        text-align: left;
+        background: none;
+        font-family: "Open Sans";
+        font-weight: bold;
+    }
+
+    .start-for-free-link {
+        color: white; 
+        position: absolute;
+        top: 83%;
+        left: 85%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        font-size: 12px;
+        padding: 18px 24px;
+        cursor: pointer;
+        text-align: left;
+        background: none;
+        font-family: "Open Sans";
+        font-weight: bold;
+    }
+
+    textarea:focus, input:focus {
+        color: white;
+    }
+
+    input::placeholder {
+        color: #fff;
+    }   
+    ::-webkit-input-placeholder { 
+        color: #fff;
+    }
+    ::-moz-placeholder {
+        color: #fff;
+    }
+    :-moz-placeholder {
+        color: #fff;
+    }
+    :-ms-input-placeholder {
+        color: #fff;
+    }
+
+    @media (max-width: 299px){
+        .sign-in-text {
+            top: 20%;
+            left: 52%;
+        }
+
+        .email-input {
+            top: 30%;
+            padding: 8px 10px;
+            width: 45%;
+            height: 7%;
+            left: 55%;
+            font-size: medium;
+        }
+
+        .email-error-message {
+            top: 38%;
+            left: 52%;
+            font-size: 9px;
+        }
+
+        .password-input {
+            top: 46%;
+            padding: 8px 10px;
+            width: 45%;
+            height: 7%;
+            left: 55%;
+            font-size: medium;
+        }
+
+        .password-error-message {
+            top: 60%;
+            left: 52%;
+            font-size: 9px;
+        }
+
+        .next-btn {
+            margin-top: 1px;
+            padding: 10px 16px;
+            width: 45%;
+            height: 7%;
+            left: 55%;
+            top: 73%;
+            font-size: medium;
+        }
+
+        .forgot-password-link {
+            top: 81%;
+            left: 73%;
+        }
+
+        .not-member-label {
+            top: 89%;
+            left: 50%;
+        }
+
+        .start-for-free-link {
+            top: 89%;
+            left: 75%;
+        }
+    }
+
+    @media (min-width: 300px) and (max-width: 499px){
+        .sign-in-text {
+            left: 52%;
+        }
+
+        .email-input {
+            padding: 16px 20px;
+            width: 45%;
+            height: 7%;
+            left: 57%;
+        }
+
+        .email-error-message {
+            top: 54%;
+            left: 54%;
+            font-size: 9px;
+        }
+
+        .password-input {
+            top: 60%;
+            padding: 16px 20px;
+            width: 45%;
+            height: 7%;
+            left: 57%;
+        }
+
+        .password-error-message {
+            top: 69%;
+            left: 55%;
+            font-size: 9px;
+        }
+
+        .next-btn {
+            margin-top: 1px;
+            padding: 20px 24px;
+            width: 45%;
+            height: 7%;
+            left: 57%;
+            top: 78%
+        }
+
+        .forgot-password-link {
+            top: 87%;
+            left: 73%;
+        }
+
+        .not-member-label {
+            top: 93%;
+            left: 56%;
+        }
+
+        .start-for-free-link {
+            top: 93%;
+            left: 75%;
+        }
+    }
+
+    /* width between 500px -  529px */
+    @media (min-width: 500px) and (max-width: 529px){
+        .sign-in-text {
+            left: 45%;
+        }
+
+        .email-input {
+            padding: 16px 20px;
+            width: 45%;
+            height: 7%;
+            left: 57%;
+        }
+
+        .email-error-message {
+            top: 53%;
+            left: 54%;
+            font-size: 9px;
+        }
+
+        .password-input {
+            top: 58%;
+            padding: 16px 20px;
+            width: 45%;
+            height: 7%;
+            left: 57%;
+        }
+
+        .password-error-message {
+            top: 65%;
+            left: 55%;
+            font-size: 9px;
+        }
+
+        .next-btn {
+            margin-top: 1px;
+            padding: 20px 24px;
+            width: 45%;
+            height: 7%;
+            left: 57%;
+            top: 72%
+        }
+
+        .forgot-password-link {
+            top: 80%;
+            left: 73%;
+        }
+
+        .not-member-label {
+            top: 85%;
+            left: 56%;
+        }
+
+        .start-for-free-link {
+            top: 85%;
+            left: 75%;
+        }
+    }
+
+    /* width between 530px - 599px */
+    @media (min-width: 530px) and (max-width: 599px)  {
+        .sign-in-text {
+            margin-top: 45px;
+            left: 58%;
+        }
+
+        .email-input {
+            margin-top: 30px;
+            padding: 20px 24px;
+            width: 45%;
+            height: 7%;
+        }
+
+        .email-error-message {
+            top: 56%;
+            left: 64%;
+            font-size: 9px;
+        }
+
+        .password-input {
+            margin-top: 5px;
+            padding: 20px 24px;
+            width: 45%;
+            height: 7%;
+        }
+
+        .password-error-message {
+            top: 69%;
+            left: 64%;
+            font-size: 9px;
+        }
+
+        .next-btn {
+            margin-top: 20px;
+            padding: 20px 24px;
+            width: 45%;
+            height: 7%;
+        }
+
+        .forgot-password-link {
+            top: 85%;
+            left: 85%;
+        }
+
+        .not-member-label {
+            top: 91%;
+            left: 73%;
+        }
+
+        .start-for-free-link {
+            top: 91%;
+            left: 86%;
+        }
+    }
+
+    /* width 600px - 815px */   
+    @media (min-width: 600px) and (max-width: 815px)  {
+        .sign-in-text {
+            margin-top: 45px;
+        }
+
+        .email-input {
+            margin-top: 30px;
+            padding: 20px 24px;
+            width: 45%;
+            height: 7%;
+        }
+
+        .email-error-message {
+            top: 56%;
+            font-size: 10px;
+            left: 64%
+        }
+
+        .password-input {
+            margin-top: 8px;
+            padding: 20px 24px;
+            width: 45%;
+            height: 7%;
+        }
+
+        .password-error-message {
+            top: 69%;
+            font-size: 10px;
+            left: 65%
+        }
+
+        .next-btn {
+            margin-top: 10px;
+            padding: 20px 24px;
+            width: 45%;
+            height: 7%;
+        }
+
+        .forgot-password-link {
+            top: 82%;
+            left: 85%;
+        }
+
+        .not-member-label {
+            top: 88%;
+            left: 72%;
+        }
+
+        .start-for-free-link {
+            top: 88%;
+            left: 85%;
+        }
+    }
+
+    /* width 816px - 1000px */
+    @media (min-width: 816px) and (max-width: 1000px) {
+        .sign-in-text {
+            margin-top: 55px;
+            left: 54%;
+        }
+
+        .email-input {
+            margin-top: 40px;
+            padding: 20px 24px;
+            width: 45%;
+            height: 7%;
+        }
+
+        .email-error-message {
+            top: 57%;
+            font-size: 12px;
+            left: 60%
+        }
+
+        .password-input {
+            margin-top: 15px;
+            padding: 20px 24px;
+            width: 45%;
+            height: 7%;
+        }
+
+        .password-error-message {
+            top: 69.5%;
+            font-size: 12px;
+            left: 65%
+        }
+
+        .next-btn {
+            margin-top: 20px;
+            padding: 20px 24px;
+            width: 45%;
+            height: 7%;
+        }
+
+        .forgot-password-link {
+            top: 85%;
+            left: 85%;
+        }
+
+        .not-member-label {
+            top: 89%;
+            left: 74.5%;
+        }
+
+        .start-for-free-link {
+            top: 89%;
+            left: 85%;
+        }
+    }
+
+    /* width 1001px - 1200px */
+    @media (min-width: 1001px) and (max-width: 1200px) {
+        .sign-in-text {
+            left: 58%;
+        }
+
+        .email-error-message {
+            top: 54%;
+            font-size: 12px;
+            left: 64.5%
+        }
+
+        .password-error-message {
+            top: 69%;
+            font-size: 12px;
+            left: 68%
+        }
+
+        .next-btn {
+            top: 77%;
+        }
+
+        .forgot-password-link {
+            top: 84%;
+            left: 85%;
+        }
+
+        .not-member-label {
+            top: 87%;
+            left: 77%;
+        }
+
+        .start-for-free-link {
+            top: 87%;
+            left: 86%;
+        }
+    }
+
+    /* width 1201px and above */
+    @media (min-width: 1201px) {
+        .email-error-message {
+            top: 54%;
+            font-size: 14px;
+            left: 61.5%
+        }
+
+        .password-error-message {
+            top: 69%;
+            font-size: 14px;
+            left: 68%
+        }
+
+        .next-btn {
+            top: 78%;
+        }
+
+        .forgot-password-link {
+            top: 87%;
+            left: 85%;
+        }
+
+        .not-member-label {
+            top: 91%;
+            left: 79%;
+        }
+
+        .start-for-free-link {
+            top: 91%;
+            left: 85.7%;
+        }
+    }
+    
+    @media only screen and (min-width: 1400px) {
+        .gradient-background {
+            width: 100%;
+            height: auto;
+        }
+    } 
+
+    @media only screen and (min-width: 1632px) and (max-height: 1000px) {
+        .gradient-background {
+            width: 100%;
+            height: auto;
+        }
+    } 
+
+    @media only screen and (min-width: 1920px) {
+        .gradient-background {
+            width: 100%;
+            height: auto;
+        }
+    } 
+
+    @media only screen and (min-width: 4000px) {
+        .gradient-background{
+            width: 100%;
+            height: auto;
+        }
+    } 
+
+    @media only screen and (min-width: 5000px) {
+        .gradient-background {
+            width: 100%;
+            height: auto;
+        }
+    } 
+
